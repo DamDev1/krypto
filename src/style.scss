@@ -1,0 +1,445 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    --outfit: 'Outfit', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --primary-color: #8D8CDA;
+    --secondary-color: #000025;
+    --feature-color: #262657;
+    --testimony-color: #7f7feb35;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+}
+
+#header{
+    padding: 20px 10%;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+
+            span{
+                color: white;
+                font-family: var(--outfit);
+                font-weight: bold;
+                letter-spacing: 5px;
+                font-size: 18px;
+            }
+        }
+
+        .nav{
+            
+            .liContainer{
+                display: none;
+            }
+
+            .buyNft{
+                display: block;
+                background: var(--primary-color);
+                padding: 10px 20px;
+                font-family: var(--outfit);
+                color: white;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+                cursor: pointer;
+
+                li{
+                    list-style: none;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+#hero{
+    padding: 20px 10%;
+
+    .container{
+        .heroDetails{
+            width: 100%;
+            color: white;
+            
+            h1{
+                font-family: var(--outfit);
+                font-size: 50px;
+            }
+
+            p{
+                margin-top: 10px;
+                color: rgba(219, 219, 219, 0.512);
+                font-family: var(--roboto);
+            }
+
+            .heroBtn{
+                display: flex;
+                margin-top: 20px;
+
+                button{
+                    cursor: pointer;
+                    padding: 15px 25px;
+                    color: white;
+                    background: var(--primary-color);
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                }
+
+                button:nth-child(2){
+                    margin-left: 10px;
+                    background: transparent;
+                    border: 1px solid #89D0D1;
+                }
+
+                button:nth-child(2):hover{
+                    background: #89D0D1;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+            }
+        }
+
+        .heroImg{
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+#feature{
+    padding: 10px 10%;
+    margin-top: 2rem;
+    .container{
+        color: white;
+        font-family: var(--outfit);
+
+        h3{
+            font-size: 15px;
+        }
+
+        .companies{
+            margin-top: 1rem;
+            background: var(--feature-color);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            grid-gap: 40px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+
+            i{
+                font-size: 50px;
+                padding: 5px;
+                color: #12121fd1;
+            }
+        }
+
+    }
+}
+
+#showcase{
+    padding: 10px 10%;
+    margin-top: 2rem;
+
+    .container{
+
+        .row{
+
+            .firstShowcase{
+                
+                .showcaseDetails{
+                    h4{
+                        color: white;
+                        font-family: var(--outfit);
+                        text-transform: uppercase;
+                        font-size: 15px;
+                    }
+
+                    h2{
+                        font-size: 40px;
+                        color: white;
+                        text-transform: capitalize;
+                        font-family: var(--outfit);
+                    }
+
+                    p{
+                        color: rgba(219, 219, 219, 0.512);
+                        font-family: var(--roboto);
+                        margin-top: 10px;
+                        text-transform: capitalize;
+                    }
+
+                    .btn{
+                        margin-top: 1rem;
+
+                        button{
+                            padding: 15px 20px;
+                            color: white;
+                            background: var(--primary-color);
+                            border-radius: 20px;
+                            -webkit-border-radius: 20px;
+                            -moz-border-radius: 20px;
+                            -ms-border-radius: 20px;
+                            -o-border-radius: 20px;
+                        }
+                    }
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .firstShowcase:nth-child(1){
+                display: none;
+            }
+        }
+    }
+}
+
+#testimony{
+    padding: 10px 10%;
+    margin-top: 2rem;
+    .container{
+        .subtitle{
+            text-align: center;
+            color: white;
+            font-family: var(--outfit);
+
+            h4{
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+
+            h2{
+                font-size: 45px;
+                text-transform: capitalize;
+                width: 100%;
+                margin-left: auto;
+                margin-top: 10px;
+                margin-left: auto;
+            }
+        }
+
+        .testimonyContentContainer{
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+
+            .content{
+                margin-top: 6rem;
+                position: relative;
+                img{
+                    width: 10rem;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    position: absolute;
+                    z-index: 1;
+                    top: -2.5rem;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                }
+                .contentDetails{
+                    background: var(--testimony-color);
+                    padding: 50px 20px;
+                    text-align: center;
+                    position: relative;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    
+
+                    h5{
+                        font-family: var(--outfit);
+                        color: white;
+                        font-size: 18px;
+                    }
+
+                    p{
+                        margin-top: 10px;
+                        color: white;
+                        font-family: var(--roboto);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#card{
+    padding: 10px 10%;
+    margin-top: 2rem;
+    
+    .container{
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(#6DC1DC, 
+        #3B17A7);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        .subtitle{
+            h4{
+                font-family: var(--outfit);
+                font-weight: bold;
+            }
+
+            h1{
+                font-family: var(--outfit);
+                color: white;
+                text-transform: capitalize;
+                font-size: 40px;
+                margin-top: 1rem;
+                width: 20rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            button{
+                padding: 15px 20px;
+                margin-top: 2rem;
+                background: black;
+                font-weight: bold;
+                cursor: pointer;
+                color: white;
+                font-family: var(--outfit);
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+            }           
+        }
+    }
+}
+
+
+@media(min-width: 768px){
+    #header{
+
+        .container{
+
+            .nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .liContainer{
+                    display: flex;  
+                    list-style: none;
+
+                    li{
+                        margin: 10px;
+                        color: white;
+                        font-family: var(--outfit);
+                        cursor: pointer;
+                    }
+                }
+
+                .buyNft{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #hero{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+
+            .heroDetails{
+                margin-top: 2rem;
+                
+                h1{
+                    font-size: 60px;
+                }
+
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #showcase{
+        .container{
+            .row{
+                .firstShowcase{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .showcaseDetails{
+                        
+                        h2{
+                            width: 80%;
+                            font-size: 60px;
+                        }
+
+                        p{
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    img{
+                        width: 50%;
+                    }
+                }
+
+                .firstShowcase:nth-child(1){
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    #testimony{
+        .container{
+            .subtitle{
+                h2{
+                    width: 30rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}

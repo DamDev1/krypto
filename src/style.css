@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --outfit: "Outfit", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --primary-color: #8D8CDA;
+  --secondary-color: #000025;
+  --feature-color: #262657;
+  --testimony-color: #7f7feb35;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+}
+
+#header {
+  padding: 20px 10%;
+}
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container .logo span {
+  color: white;
+  font-family: var(--outfit);
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+#header .container .nav .liContainer {
+  display: none;
+}
+#header .container .nav .buyNft {
+  display: block;
+  background: var(--primary-color);
+  padding: 10px 20px;
+  font-family: var(--outfit);
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+}
+#header .container .nav .buyNft li {
+  list-style: none;
+  font-size: 15px;
+}
+
+#hero {
+  padding: 20px 10%;
+}
+#hero .container .heroDetails {
+  width: 100%;
+  color: white;
+}
+#hero .container .heroDetails h1 {
+  font-family: var(--outfit);
+  font-size: 50px;
+}
+#hero .container .heroDetails p {
+  margin-top: 10px;
+  color: rgba(219, 219, 219, 0.512);
+  font-family: var(--roboto);
+}
+#hero .container .heroDetails .heroBtn {
+  display: flex;
+  margin-top: 20px;
+}
+#hero .container .heroDetails .heroBtn button {
+  cursor: pointer;
+  padding: 15px 25px;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#hero .container .heroDetails .heroBtn button:nth-child(2) {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #89D0D1;
+}
+#hero .container .heroDetails .heroBtn button:nth-child(2):hover {
+  background: #89D0D1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#hero .container .heroImg img {
+  width: 100%;
+}
+
+#feature {
+  padding: 10px 10%;
+  margin-top: 2rem;
+}
+#feature .container {
+  color: white;
+  font-family: var(--outfit);
+}
+#feature .container h3 {
+  font-size: 15px;
+}
+#feature .container .companies {
+  margin-top: 1rem;
+  background: var(--feature-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-gap: 40px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#feature .container .companies i {
+  font-size: 50px;
+  padding: 5px;
+  color: rgba(18, 18, 31, 0.8196078431);
+}
+
+#showcase {
+  padding: 10px 10%;
+  margin-top: 2rem;
+}
+#showcase .container .row .firstShowcase .showcaseDetails h4 {
+  color: white;
+  font-family: var(--outfit);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+#showcase .container .row .firstShowcase .showcaseDetails h2 {
+  font-size: 40px;
+  color: white;
+  text-transform: capitalize;
+  font-family: var(--outfit);
+}
+#showcase .container .row .firstShowcase .showcaseDetails p {
+  color: rgba(219, 219, 219, 0.512);
+  font-family: var(--roboto);
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+#showcase .container .row .firstShowcase .showcaseDetails .btn {
+  margin-top: 1rem;
+}
+#showcase .container .row .firstShowcase .showcaseDetails .btn button {
+  padding: 15px 20px;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#showcase .container .row .firstShowcase img {
+  width: 100%;
+}
+#showcase .container .row .firstShowcase:nth-child(1) {
+  display: none;
+}
+
+#testimony {
+  padding: 10px 10%;
+  margin-top: 2rem;
+}
+#testimony .container .subtitle {
+  text-align: center;
+  color: white;
+  font-family: var(--outfit);
+}
+#testimony .container .subtitle h4 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#testimony .container .subtitle h2 {
+  font-size: 45px;
+  text-transform: capitalize;
+  width: 100%;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-left: auto;
+}
+#testimony .container .testimonyContentContainer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+#testimony .container .testimonyContentContainer .content {
+  margin-top: 6rem;
+  position: relative;
+}
+#testimony .container .testimonyContentContainer .content img {
+  width: 10rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: -2.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+#testimony .container .testimonyContentContainer .content .contentDetails {
+  background: var(--testimony-color);
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#testimony .container .testimonyContentContainer .content .contentDetails h5 {
+  font-family: var(--outfit);
+  color: white;
+  font-size: 18px;
+}
+#testimony .container .testimonyContentContainer .content .contentDetails p {
+  margin-top: 10px;
+  color: white;
+  font-family: var(--roboto);
+}
+
+#card {
+  padding: 10px 10%;
+  margin-top: 2rem;
+}
+#card .container {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(#6DC1DC, #3B17A7);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#card .container .subtitle h4 {
+  font-family: var(--outfit);
+  font-weight: bold;
+}
+#card .container .subtitle h1 {
+  font-family: var(--outfit);
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-top: 1rem;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#card .container .subtitle button {
+  padding: 15px 20px;
+  margin-top: 2rem;
+  background: black;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-family: var(--outfit);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  #header .container .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .container .nav .liContainer {
+    display: flex;
+    list-style: none;
+  }
+  #header .container .nav .liContainer li {
+    margin: 10px;
+    color: white;
+    font-family: var(--outfit);
+    cursor: pointer;
+  }
+  #header .container .nav .buyNft {
+    display: none;
+  }
+  #hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  #hero .container .heroDetails {
+    margin-top: 2rem;
+  }
+  #hero .container .heroDetails h1 {
+    font-size: 60px;
+  }
+  #hero .container .heroDetails p {
+    width: 80%;
+  }
+  #showcase .container .row .firstShowcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #showcase .container .row .firstShowcase .showcaseDetails h2 {
+    width: 80%;
+    font-size: 60px;
+  }
+  #showcase .container .row .firstShowcase .showcaseDetails p {
+    letter-spacing: 2px;
+  }
+  #showcase .container .row .firstShowcase img {
+    width: 50%;
+  }
+  #showcase .container .row .firstShowcase:nth-child(1) {
+    display: flex;
+  }
+  #testimony .container .subtitle h2 {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
