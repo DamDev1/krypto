@@ -324,9 +324,9 @@ body{
                 font-family: var(--outfit);
                 color: white;
                 text-transform: capitalize;
-                font-size: 40px;
-                margin-top: 1rem;
-                width: 20rem;
+                font-size: 50px;
+                margin-top: 2rem;
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -339,13 +339,83 @@ body{
                 cursor: pointer;
                 color: white;
                 font-family: var(--outfit);
-                border-radius: 20px;
+                border-radius: 20p;
                 -webkit-border-radius: 20px;
                 -moz-border-radius: 20px;
                 -ms-border-radius: 20px;
                 -o-border-radius: 20px;
             }           
         }
+    }
+}
+
+#footer{
+    padding: 10px 10%;
+    margin-top: 2rem;
+
+    .container{
+        color: white;
+        font-family: var(--outfit);
+        display: block;
+
+        .footerContent{
+            margin-top: 10px;
+            margin-left: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            color: rgb(194, 193, 193);
+
+            .content{
+                ul{
+                    list-style: none;
+                    li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        // .contact{
+        //     margin: 2rem;
+        //     background: #aeaeb179;
+        //     height: 10%;
+        //     padding: 10px 0px 10px 10px;
+        //     border-radius: 10px;
+        //     -webkit-border-radius: 10px;
+        //     -moz-border-radius: 10px;
+        //     -ms-border-radius: 10px;
+        //     -o-border-radius: 10px;
+
+        //     input{
+        //         font-size: 15px;
+        //         border: 0;
+        //         background: transparent;
+        //         outline: 0;
+        //         color: rgb(194, 193, 193);
+        //     }
+
+        //     label{
+        //         background: var(--primary-color);
+        //         padding: 10px 15px;
+        //         border-radius: 10px;
+        //         -webkit-border-radius: 10px;
+        //         -moz-border-radius: 10px;
+        //         -ms-border-radius: 10px;
+        //         -o-border-radius: 10px;
+        //     }
+        
+
+    }
+}
+
+#footerColor{
+    div{
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(#6DC1DC, 
+        #3B17A7);
     }
 }
 
@@ -438,6 +508,16 @@ body{
                     width: 30rem;
                     margin-left: auto;
                     margin-right: auto;
+                }
+            }
+        }
+    }
+
+    #card{
+        .container{
+            .subtitle{
+                h1{
+                    width: 50%;
                 }
             }
         }
